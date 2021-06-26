@@ -1,0 +1,21 @@
+#Ask for details
+
+#check for gender
+
+#check for stream(math/cs lines up with Stream 8)
+
+#object for each response
+
+#match function:
+#if gender & stream are same using row[]
+#Check that top rez choice lines up
+
+
+#make a class for the responses
+#make objects
+
+
+todo:
+#fix class feature
+#fix write feature
+#search by program
