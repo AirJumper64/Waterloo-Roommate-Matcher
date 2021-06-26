@@ -8,7 +8,7 @@ def parse_stream(stream_text):
     return "Stream 4"
   else:
     # If no proper input is given, continue to ask until it is
-    return parse_stream(input("Please input either 4 or 8. "))
+    return "False"
 
 # Function for parsing inputted program.
 def parse_program(program):
@@ -47,17 +47,17 @@ def parse_program(program):
   elif "kinesiology" in program.lower():
     return "Kinesiology"
   else: 
-    return parse_program(input("Please input a valid Waterloo program! "))
+    return "False"
 
 # Function to check if a proper residence was added.
-def parse_top_choice(top_choice):
+def parse_res_choice(top_choice):
   # List of accepted residences.
   residences = ("CMH", "MKV", "UWP", "REV", "V1", "St. Paul's")
   for i in range(len(residences)):
     if residences[i].lower() in top_choice.lower():
       return residences[i]
   # If there was no properly inputted residence, continue to ask until there is.
-  return parse_top_choice(input("Please correctly enter a residence! The choices are: \nCMH, MKV, UWP, REV, V1 and St. Paul's. "))
+  return "False"
 
 # Function to control gender added.
 def parse_gender(user_gender):
@@ -70,9 +70,9 @@ def parse_gender(user_gender):
 
 def bool_answer(response):
   if "y" in response.lower():
-    return True
+    return "Y"
   elif "n" in response.lower():
-    return False
+    return "N"
   else:
-    return bool_answer(input("Please input either 'Y' or 'N'. "))
+    return "False"
     
